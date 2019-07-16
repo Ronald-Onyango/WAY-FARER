@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Way Farer</title>
+    <link rel="stylesheet" href="./assets/css/newstyle.css">
+    
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="left">
+                <a href="javascript:void(0)" class="openfilters" onclick="openFiltersMenu()">Filters</a> 
+            </div>
+            <div class="right">
+                <a href="">Logout</a>
+            </div>
+        </div>
+        <div id="filters" class="filters">
+             <div class="nav">
+                    <div class="close-filter">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeFiltersMenu()">&times;</a>
+                    </div>
+            </div>
+        </div>
+        <div class="main">
+                <div class="main-left">
+                    <div class="user">
+                        <div class="user-photo">
+                              <img src='./assets/images/no image.png' alt='No image'></img>
+                              <h3>Admin-user name</h3>
+                         </div> <br>
+                         <div class="nav">
+                            <a href="view-all-trips.html">View Trips</a><br>
+                         </div>
+                    </div>
+                </div>
+                <div class="main-right">
+                    <div class="right-container">
+                            <div class="container-description">
+                                <h3>Create Trip</h3>
+                            </div>
+                            <div class="form-container">
+                                 <form role="createtrip" id="created">
+                                            <div class="form-group">
+                                                <label for="date" class="control-label ">Date</label>
+                                                <input type="date" name="date" class="form-control" placeholder="dd/mm/yy" id="date">
+                                            </div> <br>
+                                           <div class="form-group">
+                                            <label for="make" class="control-label">FROM</label>
+                                            <select id="destination" onchange="getDestinations()">
+                                                <option value="Select"></option>
+                                                <option value="place">Nairobi</option>
+                                                <option value="place">Kigali</option>
+                                                <option value="place">Kampala</option>
+                                                <option value="place">Busia</option>
+                                                <option value="place">Dar es Salam</option>
+                                                <option value="place">Juba</option>
+                                                <option value="place">Gitega</option>
+                                            </select>
+                                       </div> <br>
+                                       <div class="form-group">
+                                            <label for="make" class="control-label">TO</label>
+                                            <select id="picking-station" onchange="getPickupstation()">
+                                                <option value="Select"></option>
+                                                <option value="place">Nairobi</option>
+                                                <option value="place">Kigali</option>
+                                                <option value="value">Kampala</option>
+                                                <option value="place">Busia</option>
+                                                <option value="value">Dar es Salam</option>
+                                                <option value="place">Juba</option>
+                                                <option value="place">Gitega</option>
+                                            </select>
+                                       </div><br>
+
+                                       <label for="price" class="price">Price <br>
+                                            <input type="text" class="price-input"> <br> <br>
+                                        </label>  
+                                                <label for="departure" class="control-label">DEPARTURE TIME <br> 
+                                                <input type="time" name="time" id="time"> </label> <br>
+                                                <label for="arrival" class="control-label">EXPECTED ARRIVAL TIME <br>
+                                                <input type="time" name="time" id="time"> </label><br> <br> <br>
+                                        
+                                       
+                                       <button class="btn1" type="submit" id="create_btn">Create</button>
+
+                                           </div> <br>
+                                           
+                                       </form>
+                                     </div>
+                              </div>
+                       </div> 
+                    </div>
+               <div class="errors">
+                <ul></ul>
+               </div>
+               <div class="success">
+                <p></p>
+              </div>
+        <div class="footer">
+      </div>
+ </div>
+ <script src="./app.js"></script>
+</body>
+</html>
