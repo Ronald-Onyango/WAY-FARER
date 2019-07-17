@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Way Farer</title>
+    <link rel="stylesheet" href="./assets/css/newstyle.css">
+    <script src="./app.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="left">
+                <a href="javascript:void(0)" class="openfilters" onclick="openFiltersMenu()">Filters</a> 
+            </div>
+            <div class="right">
+                <a href="">Logout</a>
+            </div>
+        </div>
+        <div id="filters" class="filters">
+             <div class="nav">
+                    <div class="close-filter">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeFiltersMenu()">&times;</a>
+                    </div>
+            </div>
+        </div>
+        <div class="main">
+                <div class="main-left">
+                    <div class="user">
+                        <div class="user-photo">
+                              <img src='./assets/Images/no image.png' alt='No image'></img>
+                              <h3>User name</h3>
+                         </div> <br>
+                         <div class="nav">
+                            <a href="admin-create-trip.html">Create Trip</a><br>
+                         </div>
+                    </div>
+                </div>
+                <div class="main-right">
+                    <div class="right-container">
+                            <div class="container-description">
+                                <h3>View Trips</h3>
+                            </div>
+                            <div class="form-container">
+                                 <form role="viewtrip" id="viewtrip">
+                                    <div class="trip-details">
+                                        <span class="trip-id">Trip ID: <a href="./assets/trips/id-102001.html">102001</a></span><br>
+                                        <span>Date:5/07/2019</span> <br>
+                                        <span>FROM: NAIROBI</span><br>
+                                        <span>TO: KIGALI </span> <br></span> <br> <br>
+                                        
+
+                                        <span class="trip-id">Trip ID: <a href="./assets/trips/id-102002.html">102002</a></span><br>
+                                        <span>Date: 6/07/2019</span> <br>
+                                        <span>FROM: KIGALI</span><br>
+                                        <span>TO: NAIROBI</span> <br> <br><br><br> <br>
+
+                                        <span class="trip-id">Trip ID: <a href="./assets/trips/id-102003.html">102003</a></span><br>
+                                        <span>Date: 9/07/2019</span> <br>
+                                        <span>FROM:KAMPALA</span><br>
+                                        <span>TO: KIGALI</span> <br>
+
+                                    </div> <br>
+                                           </div> <br>
+                                       </form>
+                                     </div>
+                              </div>
+                       </div> 
+                    </div>
+               <div class="errors">
+                <ul></ul>
+               </div>
+               <div class="success">
+                <p></p>
+              </div>
+        <div class="footer">
+      </div>
+ </div>
+</body>
+</html>
