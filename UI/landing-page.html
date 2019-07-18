@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Ronald Onyango">
+    <title>Way Farer</title>
+    <link rel="stylesheet" href="./assets/css/landing-page.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                    <div id="title">
+                            <h1><span><a href="./landing-page.html">Way Farer</a></span></h1> 
+                    </div> 
+                 <ul>
+                    <li><a href="">CONTACT US</a></li>
+                    <li><a href="./signup.html">SIGNUP</a></li>
+                    <li><a href="./login.html">LOGIN</a></li>
+                </ul>    
+            </nav>
+        </div>
+
+    </header>
+    <section>
+        <div class="container2" id="image">
+            <img src="./assets/Images/my-bus1.jpg" alt="Bus image" width="100%" height="100%">
+        </div>
+        <div class="container4"> 
+            <h1>Welcome to WayFarer Booking Services</h1> 
+            <p>Way Farer was established on 1st July 2019 with the sole aim of helping easen bus transportation across the East African countries. We have branch offices in all the capital cities of the East African countries; Kenya, Uganda, Tanzania, Rwanda, Djibouti and South Sudan.</p>
+            <p>Enjoy your trip around East Africa at the comfort you deserve.<br>In our commitment to giving our customers First Class services, all our trips come with free wifi, access to charging port, and a free drink. br<br></p><br>
+        </div>
+        <div class="booking">
+            <h3>BOOK NOW</h3>
+            <h5>Enter your details below to search available trips</h5>
+            
+           <div class="form-group">
+            <label for="make" class="control-label">FROM:</label>
+            <select id="destination" onchange="getDestinations()">
+                <option value="Select"></option>
+                <option value="place">Nairobi</option>
+                <option value="place">Kigali</option>
+                <option value="place">Kampala</option>
+                <option value="place">Busia</option>
+                <option value="place">Dar es Salam</option>
+                <option value="place">Juba</option>
+                <option value="place">Gitega</option>
+            </select>
+            </div> <br>
+           <div class="form-group">
+            <label for="make" class="control-label">TO:</label>
+            <select id="picking-station" onchange="getPickupstation()">
+                <option value="Select"></option>
+                <option value="place">Nairobi</option>
+                <option value="place">Kigali</option>
+                <option value="value">Kampala</option>
+                <option value="place">Busia</option>
+                <option value="value">Dar es Salam</option>
+                <option value="place">Juba</option>
+                <option value="place">Gitega</option>
+            </select>
+           </div><br>
+       <div class="form-group">
+        <label for="date" class="control-label">Date:</label>
+        <input type="date" name="date" class="form-control" placeholder="dd/mm/yy" id="date"> <br><br>
+    <button class="btn1" type="submit" id="create_btn"><a href="./view-all-trips.html">Search</a></button>
+        </div> <br> <br>
+    </section> 
+    <footer>
+        <p>Ronald Design, Copyright &copy;2019</p>
+    </footer>
+</body>
+</html>
