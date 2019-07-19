@@ -61,7 +61,7 @@ footer {
     text-align: center;
     font-size: 30px;
     width: 100%;
-    height: 60px;
+    height: 100%;
     background-color:rgb(238, 231, 231);
 }
 .container4 {
@@ -70,7 +70,6 @@ footer {
     margin-top: 20px;
     margin-bottom: 20px;
     height: 100%;
-    padding-bottom: 87px;
     width: 50%;
     text-align: center;
     font-size: 31px;
@@ -86,13 +85,12 @@ footer {
  .booking {
     margin-top: 20px;
     margin-bottom: 20px;
-    margin-left: 60px;
+    margin-right: 80px;
     text-align: center;
-    display: inline-block;
     width: 40%;
+    float: right;
     height: 100%;
     font-size: 30px;
-    padding: 47px;
 }
 .booking:hover {
     background-color: rgb(233, 230, 230);
@@ -124,4 +122,10 @@ input {
 }
 button a {
     text-decoration: none;
+}
+section {
+    position: relative;
+}
+body {
+    margin: 0;
 }
