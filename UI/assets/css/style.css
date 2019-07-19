@@ -1,0 +1,145 @@
+*{
+    box-sizing: border-box;
+    background-color: white;
+}
+html {
+   -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+body{
+    height: 100vh;
+    margin: 0;
+    width: 100%;
+    background-color: white; 
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+}
+.container{
+    margin-top: 30px;
+    width: 600px;
+    
+}
+.right{
+    text-align: center;
+}
+
+.left{
+    position: absolute;
+    width:50%;
+    text-align: center;
+    height: 100%;
+}
+h2{
+    margin: 0px;
+    text-align: center;
+    font-size: 40px;
+    text-decoration: none;
+ }
+ h2 a {
+     text-decoration: none;
+ }
+.main{
+    position: relative;
+    max-width:700px;
+    min-width: 700px; 
+}
+.form-instruction{
+    height:5%;
+    color:black;
+    margin: 0;
+
+}
+.form-instruction h3{
+    text-align: center;
+    color:black;
+    
+}
+.form-container{
+   height:60%;
+  }
+.form-container form{
+    width:100%;
+    height:100%;
+}
+.form-group{
+    width: 100%;
+}
+label{
+    display: block;
+    margin: 0px;
+    color:black;
+}
+input{
+    width: 100%;
+    height:30px;
+    padding: 5px;
+    margin: 0px 0px 3px 0px;
+    display: inline-block;
+    background-color: #fff;
+    border-bottom: solid black 0.1em;
+    border-top: 0em solid white;
+    border-right: 0em;
+    border-left: 0em;
+}
+input:focus{
+    background-color: #fff;
+    outline: none;
+}
+.login { 
+   width:100%;
+   color: white;
+   border: solid;
+   display: flex;
+   justify-content: space-around;
+   cursor: pointer;
+ }
+ button {
+    background-color: rgb(33, 148, 187);
+    color: white;
+    width: 35%;
+    padding: 15px 7px;
+    margin: 20px 25px;
+    border: solid;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 25px;
+    cursor: pointer;
+    opacity: 0.7;
+ }
+button:hover{
+    opacity: 1;
+    width: 40%;
+ }
+
+ .other-links a:link,.container > .main >.other-links > a:visited{
+    color: blue;
+    text-decoration: none;
+    opacity: 0.8;
+    display: flex;
+    justify-content: space-around;
+ }
+.other-links a:hover {
+    opacity: 1.5;
+    color: blueviolet;
+    font-size: 110%;
+}
+#reset-button {
+    margin: 10px 125px;;
+    width: 50%;
+    background-color: rgb(33, 148, 187);
+}
+#reset-button:hover {
+    width: 52%;
+}
+#signup-btn {
+    width: 50%;
+    margin: 10px 125px ;
+}
+#signup-btn:hover {
+    width: 52%;
+}
+nav {
+    width: 700px;
+}

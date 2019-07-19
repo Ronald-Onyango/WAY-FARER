@@ -1,0 +1,52 @@
+body {
+    width: 100vw;
+}
+h4 {
+    text-align: center;
+}
+.seat-container {
+    margin-left: 120px;
+    width: 300px;
+    height: 890px;
+    border: solid black 2px;
+    display: inline-block;
+}
+.row span {
+    display: inline-flex;
+    text-align: center;
+    width: 24%;
+    justify-content: space-around;
+}
+.seat-sidebar {
+    text-align: center;
+    font-size: 17px;
+    margin-left: 0;
+    margin-right: 300px;
+    float: right;
+}
+.seat-container button {
+    opacity: 0.9;
+    background-color: rgb(0, 0, 255);
+    margin-left: 120px;
+    width: 23%;
+}
+.seat-container button:hover {
+    cursor: pointer;
+    opacity: 1.5;
+    width: 24%;
+    background-color: rgb(3, 3, 204);
+}
+.seat-container1 {
+    font-size: 25px;
+}
+
+button a{
+    text-decoration: none;
+    font-size: 20px;    
+}
+.seat-sidebar button:hover {
+    background-color: rgb(219, 217, 217);
+}
+.trips-id span {
+    font-size: 25px;
+}
