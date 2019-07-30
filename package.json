@@ -1,0 +1,65 @@
+{
+  "name": "way-farer",
+  "version": "1.0.0",
+  "description": "WayFarer is a public bus transportation booking service.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel server.js --out-dir build",
+    "dev-start": "babel-watch server.js",
+    "lint": "eslint **/*.js --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ronald-Onyango/WAY-FARER.git"
+  },
+  "author": "Ronald Onyango",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ronald-Onyango/WAY-FARER/issues"
+  },
+  "homepage": "https://github.com/Ronald-Onyango/WAY-FARER#readme",
+  "dependencies": {
+    "all": "0.0.0",
+    "babel-core": "^6.26.3",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0",
+    "bcrypt": "^3.0.3",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "cross-env": "^5.2.0",
+    "dotenv": "^6.2.0",
+    "express": "^4.17.1",
+    "express-validator": "^5.3.1",
+    "jsonwebtoken": "^8.4.0",
+    "moment": "^2.24.0",
+    "pg": "^7.8.0",
+    "swagger-jsdoc": "^3.2.9",
+    "swagger-ui-express": "^4.0.4",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^10.0.1",
+    "babel-preset-env": "^1.7.0",
+    "babel-watch": "^7.0.0",
+    "chai": "^4.2.0",
+    "coveralls": "^3.0.3",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-airbnb-base": "^13.2.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.0",
+    "eslint-plugin-react": "^7.12.4",
+    "istanbul": "^0.4.5",
+    "mocha": "^5.2.0",
+    "mocha-lcov-reporter": "^1.3.0",
+    "nodemon": "^1.18.9",
+    "npm-run-all": "^4.1.5",
+    "nyc": "^13.3.0",
+    "sinon": "^7.2.3",
+    "supertest": "^3.4.2"
+  }
+}
