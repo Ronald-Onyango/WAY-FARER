@@ -15,8 +15,9 @@ class Users {
    */
 
   create(data) {
+    console.log(data);
     const newUser = {
-      id: this.users.len + 1,
+      id: this.users.length + 1,
       email: data.email || '',
       first_name: data.first_name || '',
       last_name: data.last_name || '',
