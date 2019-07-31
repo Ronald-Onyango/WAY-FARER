@@ -21,6 +21,7 @@ class Users {
       email: data.email || '',
       first_name: data.first_name || '',
       last_name: data.last_name || '',
+      password: data.password || '',
       is_admin: data.is_admin || false,
       createdDate: moment.now(),
     };

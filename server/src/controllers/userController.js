@@ -14,7 +14,7 @@ const UserController = {
     return res.status(201).json({
       status: 'success',
       data: {
-        User,
+        ...User,
       },
     });
   },
