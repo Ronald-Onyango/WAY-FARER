@@ -4,10 +4,11 @@
   "description": "WayFarer is a public bus transportation booking service.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "babel server.js --out-dir build",
     "dev-start": "babel-watch server.js",
-    "lint": "eslint **/*.js --fix"
+    "lint": "eslint **/*.js --fix",
+    "test": "cross-env NODE_ENV=test nyc mocha ./server/test --require babel-register --recursive --timeout 50000 --exit",
+    "coverage": "cross-env NODE_ENV=test npm run nyc -- --report lcovonly && cat ./coverage/lcov.info | coveralls"
   },
   "repository": {
     "type": "git",
