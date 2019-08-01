@@ -2,31 +2,31 @@ language: node_js
 node_js:
   - 10.15.2
 
-env:
-  global:
-    - NODE_ENV=test
-    - CC_TEST_REPORTER_ID=YGBYgEjCP-OfCGAmA2Gmyg
+# env:
+#   global:
+#     - NODE_ENV=test
+#     - CC_TEST_REPORTER_ID=YGBYgEjCP-OfCGAmA2Gmyg
 
 
-addons:
-  codeclimate:
-    repo_token: YGBYgEjCP-OfCGAmA2Gmyg
+# addons:
+#   codeclimate:
+#     repo_token: YGBYgEjCP-OfCGAmA2Gmyg
 
-script:
-  - npm run test
+# script:
+#   - npm run test
 
-cache:
-  npm: true
-  directories:.
-    -node_modules
+# cache:
+#   npm: true
+#   directories:.
+#     -node_modules
 
-before_script:
-  - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
-  - chmod +x ./cc-test-reporter
-  - ./cc-test-reporter before-build
+# before_script:
+#   - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+#   - chmod +x ./cc-test-reporter
+#   - ./cc-test-reporter before-build
 
-after_script:
-  - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
+# after_script:
+#   - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
 
-after_success:
-  - npm run coverage
+# after_success:
+#   - npm run coverage
