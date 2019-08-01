@@ -4,12 +4,12 @@ import notEmpty from '../helpers/notEmpty';
 
 export default {
   signup: [
-    check(['firstname', 'lastname', 'email', 'address', 'password', 'confirmPassword'])
+    check(['first_name', 'last_name', 'email', 'password', 'confirmPassword'])
       .trim()
       .exists()
       .withMessage('All fields are required')
       .custom(value => notEmpty(value, 'All fields are required')),
-    check(['lastname', 'firstname'])
+    check(['last_name', 'first_name'])
       .isString()
       .withMessage('Firstname and lastname must be a string')
       .isAlpha()

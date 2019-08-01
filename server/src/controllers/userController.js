@@ -8,8 +8,15 @@ const UserController = {
    * @param {object} res
    * @returns {object} Users object
    */
-  // eslint-disable-next-line class-methods-use-this
+
   create(req, res) {
+    const { email } = req.body;
+    const emailreg = UsersModel.findOne(email);
+    if (emailreg) {
+      return res.status(409).json({
+        error: 'Email is already registered',
+      });
+    }
     const User = UsersModel.create(req.body);
     return res.status(201).json({
       status: 'success',

@@ -6,7 +6,6 @@ import ErrorHandler from './middlewares/ErrorHandler';
 import 'babel-polyfill';
 import apiRoutes from './routes';
 
-
 config();
 
 const app = express();
