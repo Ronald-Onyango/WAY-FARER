@@ -1,9 +1,9 @@
 # WayFarer
 
-<!-- [![Build Status](https://travis-ci.org/Ronald-Onyango/WAY-FARER.svg?branch=develop)](https://travis-ci.org/Ronald-Onyango/WAY-FARER)
+[![Build Status](https://travis-ci.org/Ronald-Onyango/WAY-FARER.svg?branch=develop)](https://travis-ci.org/Ronald-Onyango/WAY-FARER)
 [![Coverage Status](https://coveralls.io/repos/github/Ronald-Onyango/WAY-FARER/badge.svg?branch=master)](https://coveralls.io/github/Ronald-Onyango/WAY-FARER?branch=master)
 [![Maintainability](https://api.codeclimate.com/v1/badges/dfdbde182be1e167062c/maintainability)](https://codeclimate.com/github/Ronald-Onyango/WAY-FARER/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/dfdbde182be1e167062c/test_coverage)](https://codeclimate.com/github/Ronald-Onyango/WAY-FARER/test_coverage) -->
+[![Test Coverage](https://api.codeclimate.com/v1/badges/dfdbde182be1e167062c/test_coverage)](https://codeclimate.com/github/Ronald-Onyango/WAY-FARER/test_coverage)
 
 WayFarer is a public bus transportation booking service.
 
