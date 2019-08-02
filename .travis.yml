@@ -17,7 +17,7 @@ script:
 
 cache:
   npm: true
-  directories:.
+  directories:
     - node_modules
 
 before_script:
