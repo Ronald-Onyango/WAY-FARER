@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-  - 10.15.2
+  - "stable"
 
 env:
   global:
@@ -18,7 +18,7 @@ script:
 cache:
   npm: true
   directories:
-    -node_modules
+    - node_modules
 
 before_script:
   - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
@@ -29,4 +29,4 @@ after_script:
   - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
 
 after_success:
-   - npm run coverage
+  - npm run coverage
