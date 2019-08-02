@@ -5,11 +5,15 @@ import bodyParser from 'body-parser';
 import ErrorHandler from './middlewares/ErrorHandler';
 import 'babel-polyfill';
 import apiRoutes from './routes';
+import swaggerDoc from './swaggerDocs';
+
 
 config();
 
 const app = express();
 const port = process.env.PORT || 3000;
+
+swaggerDoc(app);
 
 app.use(cors());
 app.use(bodyParser.json());

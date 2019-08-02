@@ -6,7 +6,7 @@
   "scripts": {
     "build": "babel server.js --out-dir build",
     "dev": "cross-env NODE_ENV=development nodemon --exec babel-node -- ./server/src/app.js",
-    "start": "cross-env NODE_ENV=production node ./server/dist/src/app.js",
+    "start": "cross-env NODE_ENV=production node ./server/src/app.js",
     "lint": "eslint \"**/*.js\" ",
     "test": "cross-env NODE_ENV=test nyc mocha ./server/test --require babel-register --recursive --timeout 50000 --exit",
     "coverage": "cross-env NODE_ENV=test npm run nyc -- --report lcovonly && cat ./coverage/lcov.info | coveralls"
